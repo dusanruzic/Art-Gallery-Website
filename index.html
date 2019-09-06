@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="img/logo2.jpeg">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Galerija MOZAIK</title>
+    <link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/javascript.js"> </script>
+	<script src="js/javascript2.js" type="text/javascript"></script>
+	<script src="js/naslov.js" type="text/javascript"></script>
+
+     
+
+</head>
+<body >
+    <header>
+     
+        <div id="pozadina">
+          <p id="clockbox"> </p>
+            <h1 id="logo">Galerija <strong>MOZAIK</strong></h1>
+        </div>
+     
+      <nav>
+        <ul>
+          <li><a href="index.html" class="selected" id="galerija">Galerija</a></li>
+          <li><a href="onama.html">O nama</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="registracija.html">Registracija</a></li>
+        </ul>
+      </nav>
+	  <div id='container'>
+			<img class='slides' src="img/prva.jpg">
+			<img class='slides' src="img/druga.jpg">
+			<img class='slides' src="img/treca.jpg">
+			<img class='slides' src="img/cetvrta.jpg">
+			<img class='slides' src="img/peta.jpg">
+			<img class='slides' src="img/sesta.jpg">
+			<img class='slides' src="img/sedma.jpg">
+			<img class='slides' src="img/osma.jpg">
+			<img class='slides' src="img/deveta.jpg">
+			<img class='slides' src="img/deseta.jpg">
+			<img class='slides' src="img/jedanaesta.jpg">
+			<img class='slides' src="img/dvanaesta.jpg">
+			<button class="btn" onclick="minusIndex(-1)" id="btn1" >&#10094;</button>
+			<button class="btn" onclick="plusIndex(+1)" id="btn2">&#10095;</button>
+		</div>
+		<div id="slidesh">
+			<hr>
+			
+				  <button type="submit" class="btn btn-success btn-sm" 
+				  id="dugme1" onClick="autoSlide(s=1)">SlideShow</button>
+				  <button type='submit' class="btn btn-success btn-sm" 
+				  id="dugme2" onClick="autoSlide(s=0)">Stop</button>
+
+			<hr>
+		</div>
+		</div>
+    </header>
+    <div id="wrapper">
+      <section>
+        <ul id="gallery">
+          <li>
+              <a href='#' id='slika1'>
+			  <img src="img/prva.jpg" height='290' onClick='showImage(index=1)' alt=''></a>
+              <p>Zimska idila</p>
+          </li>
+          <li>
+				<a href='#' id='slika2'>
+              <img src="img/druga.jpg" height='290' onClick='showImage(index=2)' alt=''></a>
+              <p>Jesenja melanholija</p>
+          </li>
+          <li>
+			<a href='#' id='slika3'>
+              <img src="img/treca.jpg" height='290' alt=""  onClick='showImage(index=3)'></a>
+              <p>Prolećni zalazak</p>
+          </li>
+          <li >
+			<a href='#' id='slika4'>
+              <img src="img/cetvrta.jpg" height='290' width='400' alt="" onClick='showImage(index=4)'></a>
+              <p>Maslačak na vetru</p>
+          </li>
+          <li>
+			<a href='#' id='slika5'>
+              <img src="img/peta.jpg" height='260' alt="" onClick='showImage(index=5)'></a>
+              <p>Pusta luka</p>
+          </li>
+          <li>
+			<a href='#' id='slika6'>
+              <img src="img/sesta.jpg" height='260' alt="" onClick='showImage(index=6)'></a>
+              <p>Uspavana lepotica</p>
+          </li>
+          <li>
+			<a href='#' id='slika7'>
+              <img src="img/sedma.jpg" height='370' alt="" onClick='showImage(index=7)'></a>
+              <p>Kas konja</p>
+          </li>
+          <li>
+			<a href='#' id='slika8'>
+              <img src="img/osma.jpg" height='370' alt="" onClick='showImage(index=8)'></a>
+              <p>Tigrasti mozaik</p>
+          </li>
+          <li>
+			<a href='#' id='slika9'>
+              <img src="img/deveta.jpg" height='510' alt="" onClick='showImage(index=9)'></a>
+              <p>Priroda sve vidi</p>
+          </li>
+          <li>
+			<a href='#' id='slika10'>
+              <img src="img/deseta.jpg" height='510' alt="" onClick='showImage(index=10)'></a>
+              <p>Suncokreti bez sunca</p>
+          </li>
+          <li>
+			<a href='#' id='slika11'>
+              <img src="img/jedanaesta.jpg" height='290' alt="" onClick='showImage(index=11)'></a>
+              <p>Mrtva priroda</p>
+          </li>
+          <li>
+			<a href='#' id='slika12'>
+              <img src="img/dvanaesta.jpg" height='290' alt="" onClick='showImage(index=12)'></a>
+              <p>Zdravlje na delu</p>
+          </li>
+        </ul>
+      </section>
+      <footer>
+        <a href="#"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+        <a href="#"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+        <br> <br>
+       <p>&copy; <strong>2017   Dušan Ružić i Marko Pavlović</strong></p>
+      </footer>
+    </div>
+</body>
+	<script language="javascript">
+	 showImage(1);
+	 blink();
+	 </script>
+</html>

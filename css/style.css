@@ -1,0 +1,436 @@
+
+body {
+  font-family: 'Amatic SC', cursive;
+  font-size: 2em;
+  background-color: #fff;
+  color: black;
+}
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+#container{
+	width:75%;
+	height:450px;
+	border:4px solid black;
+	margin: 0 auto;
+	position:relative;
+}
+#container>img{
+	width:100%;
+	height:100%;
+	position:absolute;
+}
+#container>.btn{
+	position:absolute;
+	width:50px;
+	height:50px;
+	border:none;
+	border-radius:25px;
+	top:180px;
+	background:black;
+	color:white;
+	font-size:20px;
+}
+#container>#btn1:hover{
+	box-shadow:10px 0px 20px 0px black;
+}
+#container>#btn2:hover{
+	box-shadow:-10px 0px 20px 0px black;
+}
+
+#container>#btn2{
+	position: relative;
+	float: right;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+
+}
+
+h3 {
+  margin: 0 0 1em 0;
+}
+
+header {
+  float: left;
+  margin: 0 0 15px 0;
+  padding: 0 0 0 0;
+  width: 100%;
+  background: #6ab47b;
+  border-color: #599a68;
+
+}
+
+#logo {
+  text-align: center;
+  margin: 0;
+  padding-top: 10px;
+  line-height: 120px;
+
+}
+
+h1 {
+  font-family: 'Amatic SC', cursive;
+  margin: 15px 0;
+  font-size: 2.5em;
+  font-weight: normal;
+  line-height: 0.8em;
+}
+
+h2 {
+  font-size: 0.75em;
+  margin: -5px 0 0;
+  font-weight: normal;
+}
+
+nav {
+	font-size: 1.3em;
+  text-align: center;
+  padding: 15px 0;
+  margin: 20px 0 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  padding-right: 8%;
+}
+
+nav a {
+  font-weight: 800;
+  padding: 10px 10px;
+}
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  color: #ccc;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+}
+
+#gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#gallery li {
+  float: left;
+  width: 45%;
+  margin: 2.5%;
+  background-color: #f5f5f5;
+  color: #bdc3c7;
+}
+
+.profile-photo {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 100%;
+}
+
+#slidesh {
+  width: 45%;
+  height: 120px;
+  position: relative;
+  left: 27.5%;
+}
+
+#dugme1 {
+  width: 30%;
+  margin-left: 5%;
+  margin-right: 25%;
+}
+
+#dugme2 {
+  width: 30%;
+  
+}
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+.contact-info li.phone a {
+  background-image: url('../img/phone.png');
+}
+
+.contact-info li.mail a {
+  background-image: url('../img/mail.png');
+}
+
+.contact-info li.twitter a {
+  background-image: url('../img/twitter.png');
+}
+
+nav {
+  background: #599a68;
+}
+
+h1, h2 {
+  color: #fff;
+}
+
+a {
+  color: #6ab47b;
+}
+
+nav a {
+  color: #fff;
+}
+
+nav a.selected, nav a:hover {
+  color: #32673f;
+}
+
+header h1 {
+	padding-bottom: 0px;
+	font-family: 'Amatic SC', cursive;
+	font-size: 4em;
+}
+
+#clockbox {
+
+  padding-top: 2%;
+  padding-right: 4%;
+  text-align: right;
+  background: #6ab47b;
+}
+
+p {
+	font-size: 1.5em;
+  background-color: #fff;
+  color: black;
+  margin: 0px;
+  padding-bottom: 10px;
+}
+
+
+#pol {
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#tehnika {
+
+	padding-bottom: 25px;
+}
+
+#contactForm {
+  padding-bottom: 50px;
+  
+}
+
+#mapa {
+  padding-left: 60px;
+  width: 20%;
+}
+
+.ui-datepicker {
+    /*background: transparent;*/
+    background: red;
+    font-size: 1.2em;
+     letter-spacing: 5px;
+     word-spacing: 10px;
+}
+
+
+
+@media(min-width: 1200px){
+	.jumbotron img.showcase-img{
+	width:61%;
+	margin:5px 0 0 40px;
+}
+}
+
+@media(min-width: 768px) and (max-width: 990px){
+	.jumbotron img.app-btn{
+		width:30%;
+	}
+   p {
+    font-size: 1em;
+  }
+
+	.jumbotron{
+		height:400px !important;
+		background-size:100% 100%;
+	}
+
+	.jumbotron h1{
+		margin-top:10px;
+	}
+}
+
+@media(max-width: 768px){
+	.jumbotron{
+		height:400px !important;
+		background-size:100% 100%;
+	}
+   p {
+    font-size: 1em;
+  }
+
+	.jumbotron h1{
+		margin-top:10px;
+	}
+
+    header {
+    font-size: 0.7em;
+    padding-top: 10px;
+    padding-bottom: 1px;
+  }
+
+  header h1 {
+    padding-bottom: 15px;
+}
+#container{
+  width: 100%;
+  height: 300px;
+}
+
+#logo {
+    
+    padding-top: 0px;
+    line-height: 90px;
+}
+
+footer p {
+  font-size: 1em;
+}
+}
+
+@media(max-width: 500px){
+	.jumbotron{
+		height:400px !important;
+		background-image:none;
+		text-align: center;
+	}
+
+	.jumbotron img.app-btn{
+		width:60%;
+		margin:0 auto 30px auto;
+		display:block;
+	}
+
+	#dugme1, #dugme2 {
+    font-size: 0.9em;
+    width: 35%;
+
+  }
+
+  #dugme1 {
+    margin-right: 15%;
+  }
+
+	footer p{
+		float:none;
+		text-align: center;
+		padding-top:20px;
+    font-size: 0.9em;
+	}
+
+  #gallery li {
+  float: left;
+  width: 80%;
+  margin: 2.5%;
+  background-color: #f5f5f5;
+  color: #bdc3c7;
+  margin-left: 7%;
+  }
+
+#clockbox {
+  background-color: #6ab47b;
+}
+
+  body {
+    background-color: black;
+  }
+
+  p {
+    background-color: black;
+    color: #fff;
+  }
+
+  .radio {
+    color: white;
+  }
+
+  #tehnika {
+    color: white;
+  }
+
+  select {
+     background: #000;
+    color:#fff;
+  }
+
+  label {
+    color: white;
+  }
+
+  .social-icon {
+    background-color: #fff;
+  }
+
+  header h1 {
+    font-size: 4em;
+    padding: 0px;
+  }
+  header p {
+    font-size: 1em;
+
+  }
+
+
+}
+
+@media(min-width: 600px){
+#contactForm {
+    width: 45%;
+    float: left;
+  }
+
+#secondary {
+  width: 45%;
+  float: left;
+  margin-left: 30px;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+}
